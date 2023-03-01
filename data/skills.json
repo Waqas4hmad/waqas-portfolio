@@ -1,0 +1,19 @@
+{
+    "skill": [
+        {
+            "name": "Hybrid App Development",
+            "description": " Create Outstanding mobile app using react native and flutter framework suited for Android, iOS and Web.",
+            "projects_completed": "20+"
+        },
+        {
+            "name": "Native App Development",
+            "description": "Build Stunning modern android and iOS App by using Android Studio, Kotlin, SwiftUI and Combine.",
+            "projects_completed": "10+"
+        },
+        {
+            "name": "Frontend Development",
+            "description": "I can build a beautiful and scalable SPA using HTML, SCSS, Tailwind, React, Next JS and Vue.js.",
+            "projects_completed": "8+"
+        }
+    ]
+}
