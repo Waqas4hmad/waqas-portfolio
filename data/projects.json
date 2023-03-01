@@ -1,0 +1,36 @@
+
+
+
+
+{
+    "projects":[
+        {
+            "title": "Zuri Fertility",
+            "imageUrl": "/apps/zuri.png",
+            "project_url": "https://github.com/Benrobo/baaymax",
+            "description": "Zuri is a Digital Fertility Clinic that provides a personalized treatment plan and a dedicated care coordinator and supports you throughout your fertility journey.",
+            "tags": [ "react native", "typeScript","nodejs","firebase","bitbucket","jira" ]
+        },
+        {
+            "title": "Ultimate Shield Apparel - Shop",
+            "imageUrl": "/apps/ultimate.png",
+            "project_url": "https://github.com/Benrobo/babcock-uber",
+            "description": "Ultimate Shield Apparel is E-commernce app that offers a varieties of premium Apparel including T-Shirts, Long-sleeve, Sweat Shirts, Active-wears, Hoodies, Accessories and many more.",
+            "tags": [ "react native", "jacascript", "firebase" ]
+        },
+        {
+            "title": "Al Bari Group of Companies",
+            "imageUrl": "/apps/albari.png",
+            "project_url": "https://github.com/Benrobo/e-workflow-client",
+            "description": "Automate document submission within a school.",
+            "tags": [ "react native", "xcode", "android studio","firebase message" ]
+        },
+        {
+            "title": "Cool People Network",
+            "imageUrl": "/apps/cool.png",
+            "project_url": "https://github.com/Benrobo/quickr",
+            "description": "Cool People Network is a Streaming platform that provides quality entertainment. Our network is a true one stop shop that has a wide range of content.",
+            "tags": [  "react native", "javascript", "webview", "mysql", "php" ]
+        }
+    ]
+}
