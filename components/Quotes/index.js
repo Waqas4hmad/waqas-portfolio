@@ -50,7 +50,7 @@ function StarRatings({ count = 1, size = 3 }) {
             {
                 Array(count).fill(count).map((i) => {
                     return (
-                        <FaStar key={i} className={`text-green-200 text-[${size}px] `} key={i} />
+                        <FaStar key={i} className={`text-green-200 text-[${size}px] `}  />
                     )
                 })
 

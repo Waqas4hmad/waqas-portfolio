@@ -7,7 +7,6 @@ import { AiFillGithub } from "react-icons/ai"
 import { projects } from "../../data/projects.json"
 import userInfo from "../../data/usersInfo.json"
 import phone from '../../public/phone.png'
-import albari from '../../public/albari.webp'
 
 function Projects() {
 
@@ -65,13 +64,13 @@ function Projects() {
                 </Link>
             </div>
 
-            <div className={`projects w-full h-auto p-3 flex flex-row flex-wrap items-center justify-between mb-[50px]`}>
+            <div className={`projects w-full  px-4 flex flex-row flex-wrap items-center justify-between mb-[50px]  `}>
                 {
                     projects.length > 0 ?
                         projects.slice(0, 6).map((list, i) => {
                             return (
                                 <Link href={list?.project_url}>
-                                    <div data-aos="zoom-in" key={i} className={`bg-phone box w-auto h-auto bg-dark-200 rounded-[50px] relative top-[50px] transition-all mb-[250px] sm-[100px] mr-[5px] opacity-[.7] md:w-[250px] hover:opacity-[1]`} >
+                                    <div data-aos="zoom-in" key={i} className={`bg-phone w-auto bg-dark-200 rounded-[50px] relative top-[50px] transition-all mb-[50px] sm-[100px] mr-[5px] opacity-[.7] md:w-[250px] hover:opacity-[1]`} >
                                         <style jsx>{`
                                 .bg-phone{
                                    height:500px;
@@ -82,10 +81,9 @@ function Projects() {
                                 }
                                 .bg-phone:hover{
                                     height:500px;
-                                    background-image: url(${albari.src});
+                                    background-image: url(${list.thumbnail});
                                     background-repeat: no-repeat;
                                      background-size: 250px 500px;
-                                    //  opacity: 0.5;
 
                                  }
                                  .wrapper{
@@ -115,15 +113,13 @@ function Projects() {
                                                         list.tags.length > 0 ?
                                                             list.tags?.map((tag, i) => (
 
-                                                                <p className=" rounded border border-yellow-400 text-xs p-1 my-.5 whitespace-pre-wrap ">{tag}</p>
+                                                                <p className=" rounded-[25px] bg-dark-300 text-center  text-xs p-1 my-.5 whitespace-pre-wrap ">{tag}</p>
                                                             ))
                                                             :
                                                             ""
                                                     }
                                                 </div>
-
                                                 <br />
-
                                             </div>
                                         </div>
                                     </div>

@@ -1,0 +1,53 @@
+{
+    "skill": [
+       
+        {
+            "name": "React Native",
+            "rating": "92%",
+            "img":"/skills/reactnative.png"
+        },
+        {
+            "name": "Flutter / Dart",
+            "rating": "77%",
+            "img":"/skills/flutter.svg"
+        },
+        {
+            "name": "Xcode",
+            "rating": "85%",
+            "img":"/skills/xcode.svg"
+        },
+        {
+            "name": "Android Studio",
+            "rating": "90%",
+            "img":"/skills/android.svg"
+        },
+        {
+            "name": "TypeScript",
+            "rating": "88%",
+            "img":"/skills/typescript.svg"
+        },
+        {
+            "name": "React JS",
+            "rating": "80%",
+            "img":"/skills/react.svg"
+        },{
+            "name": "Node JS",
+            "rating": "70+",
+            "img":"/skills/node.svg"
+        }, {
+            "name": "Tailwind CSS",
+            "rating": "88%",
+            "img":"/skills/tailwind.svg"
+        },
+        {
+            "name": "Jira",
+            "rating": "90%",
+            "img":"/skills/reactnative.png"
+        },{
+            "name": "Git",
+            "rating": "90%",
+            "img":"/skills/reactnative.png"
+        }
+       
+    ]
+}
