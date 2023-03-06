@@ -7,13 +7,13 @@ import skillsf from "../../data/techskills.json"
 
 function Skills() {
     return (
-        <div className="w-full h-auto bg-dark-200 py-[50px]">
+        <div id="skills-section" className="w-full h-auto bg-dark-200 py-[50px]">
             <Container>
                 <div className="head mx-auto flex flex-col items-center justify-center text-center md:items-center md:justify-start md:flex-row md:px-0">
                     <h1 data-aos="fade-right" className="text-[35px] font-bold md:mr-[50px]">My <span className='text-green-700'>Advantages</span></h1>
                     <p data-aos="fade-left" className="text-[12px] text-white-200 ">Best Skills</p>
                 </div>
-                <div id="quote-cont" className='w-full h-auto mt-[100px] relative p-2 md:p-0'>
+                <div id="quote-cont" className='w-full h-auto mt-[20px] relative p-2 md:p-0'>
 
                     <QuoteCard/>
                 </div>

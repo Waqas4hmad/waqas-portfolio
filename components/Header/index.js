@@ -90,9 +90,9 @@ export default function Header({ children }) {
 
                             />
                             <TypeAnimation
-                                sequence={[ 3000,'Mobile Application Developer', 4000, 'Full Stack Developer', 4000,]}
-                                 speed={270} 
-                                 cursor={false}
+                                sequence={[3000, 'Mobile Application Developer', 4000, 'Full Stack Developer', 4000,]}
+                                speed={270}
+                                cursor={false}
 
                                 className={`font-[Caveat] text-[30px] px-2 `}
                                 wrapper="span"
@@ -111,6 +111,8 @@ export default function Header({ children }) {
                         </div>
                         <div className={` top-[0px] flex align-start items-start justify-start w-full py-5`}>
                             <a className="btn hover:bg-green-700 hover:text-white-300" onClick={openResume}> DOWNLOAD CV</a>
+                            <hr className="h-px my-7 bg-gray-200 border-0 dark:bg-gray-700 w-[45px] " />
+                            <a href="#skills-section" className="h-[56px] leading-[56px] px-3 text-xl1"> My Skills </a>
                         </div>
 
                         {resumeActive && <ResumeViewer openResume={openResume} />}
@@ -124,7 +126,6 @@ export default function Header({ children }) {
                             <img src={"/images/pat-2.png"} className={`circle img2`} />
                             <img src={"/images/pat-2.png"} className={`circle img3`} />
                             <div className="info-list">
-
                                 <ul>
                                     <li>
                                         <span class='num'>
@@ -145,15 +146,7 @@ export default function Header({ children }) {
                                 </ul>
                             </div>
                         </div>
-                        {/* <div data-aos="fade-up" className={`circleA`}>
-                            <img src={languages.languages.length === 0 && languages.languages.length > 2 ? "/images/svg/react_native.svg" : languages.languages[0]} className={`langImgA`} />
-                        </div>
-                        <div data-aos="fade-right" className={`circleB`}>
-                            <img src={languages.languages.length === 0 && languages.languages.length > 2 ? "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" : languages.languages[1]} className={`langImgB`} />
-                        </div>
-                        <div data-aos="fade-left" className={`circleC`}>
-                            <img src={languages.languages.length === 0 && languages.languages.length > 2 ? "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" : languages.languages[2]} className={`langImgC`} />
-                        </div> */}
+                       
                     </div>
                 </div>
             </Container>

@@ -3,6 +3,12 @@ import { useEffect, useState } from "react"
 import Link from "next/link"
 import { FaStar, FaArrowRight, FaQuoteRight } from "react-icons/fa"
 import { AiFillGithub } from "react-icons/ai"
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { EffectCoverflow, Pagination } from "swiper";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
 
 import { projects } from "../../data/projects.json"
 import userInfo from "../../data/usersInfo.json"
@@ -65,13 +71,14 @@ function Projects() {
             </div>
 
             <div className={`projects w-full  px-4 flex flex-row flex-wrap items-center justify-between mb-[50px]  `}>
-                {
-                    projects.length > 0 ?
-                        projects.slice(0, 6).map((list, i) => {
-                            return (
-                                <Link href={list?.project_url}>
-                                    <div data-aos="zoom-in" key={i} className={`bg-phone w-auto bg-dark-200 rounded-[50px] relative top-[50px] transition-all mb-[50px] sm-[100px] mr-[5px] opacity-[.7] md:w-[250px] hover:opacity-[1]`} >
-                                        <style jsx>{`
+             
+                    {
+                        projects.length > 0 ?
+                            projects.slice(0, 6).map((list, i) => {
+                                return (
+                                        <Link href={list?.project_url}>
+                                            <div data-aos="zoom-in" key={i} className={`bg-phone w-auto bg-dark-200 rounded-[50px] relative top-[50px] transition-all mb-[50px] sm-[100px] mr-[5px] opacity-[.7] md:w-[250px] hover:opacity-[1]`} >
+                                                <style jsx>{`
                                 .bg-phone{
                                    height:500px;
                                     background-image: url(${phone.src});
@@ -94,44 +101,46 @@ function Projects() {
                                     opacity: 0;
                                  }
                             `}</style>
-                                        <div className="wrapper py-[45px] px-[20px] ">
-                                            <div className="px-[25px]">
-                                                <img
-                                                    className="object-contain"
-                                                    src={`${list.imageUrl === "" || list.imageUrl === null ? "https://www.wallpapertip.com/wmimgs/136-1369543_laptop-coding.jpg" : list.imageUrl}`}
-                                                />
-                                            </div>
-                                            <div className="w-full h-auto">
-                                                <p className={`text-[15px] py-[10px] m-0 font-extrabold text-green-100 text-white-200 text-center`}>{list.title === "" ? "Project Title" : list.title}</p>
-                                                {/* <small className=" ">{list.description === "" ? "some dummy description" : list.description}</small> */}
-                                            </div>
-                                            <div className={`w-full  bottom-[5px] `}>
-                                                <p className={`text-[14px] py-[2px] m-0 font-bold text-green-100 text-white-200 `}>Skills</p>
+                                                <div className="wrapper py-[45px] px-[20px] ">
+                                                    <div className="px-[25px]">
+                                                        <img
+                                                            className="object-contain"
+                                                            src={`${list.imageUrl === "" || list.imageUrl === null ? "https://www.wallpapertip.com/wmimgs/136-1369543_laptop-coding.jpg" : list.imageUrl}`}
+                                                        />
+                                                    </div>
+                                                    <div className="w-full h-auto">
+                                                        <p className={`text-[15px] py-[10px] m-0 font-extrabold text-green-100 text-white-200 text-center`}>{list.title === "" ? "Project Title" : list.title}</p>
+                                                        {/* <small className=" ">{list.description === "" ? "some dummy description" : list.description}</small> */}
+                                                    </div>
+                                                    <div className={`w-full  bottom-[5px] `}>
+                                                        {/* <p className={`text-[14px] py-[2px] m-0 font-bold text-white-100 text-white-200 `}>Skills</p> */}
 
-                                                <div className={`grid  grid-cols-2 gap-2 `}>
-                                                    {
-                                                        list.tags.length > 0 ?
-                                                            list.tags?.map((tag, i) => (
+                                                        <div className={`grid  grid-cols-2 gap-2 `}>
+                                                            {
+                                                                list.tags.length > 0 ?
+                                                                    list.tags?.map((tag, i) => (
 
-                                                                <p className=" rounded-[25px] bg-dark-300 text-center  text-xs p-1 my-.5 whitespace-pre-wrap ">{tag}</p>
-                                                            ))
-                                                            :
-                                                            ""
-                                                    }
+                                                                        <p className=" rounded-[25px] bg-dark-300 text-center  text-xs p-1 my-.5 whitespace-pre-wrap ">{tag}</p>
+                                                                    ))
+                                                                    :
+                                                                    ""
+                                                            }
+                                                        </div>
+                                                        <br />
+                                                    </div>
                                                 </div>
-                                                <br />
                                             </div>
-                                        </div>
-                                    </div>
-                                </Link>
-                            )
-                        })
-                        :
-                        ""
-                }
-                <div className="w-full h-auto mt-4 mb-5 p-3 flex flex-row flex-wrap items-center justify-between  ">
-                    {loading ? "Loading..." : error !== null ? <p>{error}</p> : <GithubRepo repos={repo} />}
-                </div>
+                                        </Link>
+
+                                )
+                            })
+                            :
+                            ""
+                    }
+
+                    <div className="w-full h-auto mt-4 mb-5 p-3 flex flex-row flex-wrap items-center justify-between  ">
+                        {loading ? "Loading..." : error !== null ? <p>{error}</p> : <GithubRepo repos={repo} />}
+                    </div>
             </div>
 
         </div>
