@@ -7,30 +7,39 @@
         {
             "title": "Zuri Fertility",
             "imageUrl": "/apps/zuri.png",
-            "project_url": "https://github.com/Benrobo/baaymax",
+            "project_url": "https://apps.apple.com/us/app/zuri-fertility/id1642565244",
             "description": "Zuri is a Digital Fertility Clinic that provides a personalized treatment plan and a dedicated care coordinator and supports you throughout your fertility journey.",
-            "tags": [ "react native", "typeScript","nodejs","firebase","bitbucket","jira" ]
+            "tags": [ "react native", "typeScript","nodejs","firebase","bitbucket","jira" ],
+            "thumbnail":"/apps/zuri.webp"
         },
         {
             "title": "Ultimate Shield Apparel - Shop",
             "imageUrl": "/apps/ultimate.png",
-            "project_url": "https://github.com/Benrobo/babcock-uber",
+            "project_url": "https://play.google.com/store/apps/details?id=com.ultimateshieldapparel&hl=en_ZA&gl=US",
             "description": "Ultimate Shield Apparel is E-commernce app that offers a varieties of premium Apparel including T-Shirts, Long-sleeve, Sweat Shirts, Active-wears, Hoodies, Accessories and many more.",
-            "tags": [ "react native", "jacascript", "firebase" ]
+            "tags": [ "react native", "jacascript", "firebase" ],
+            "thumbnail":"/apps/ultimate.webp"
+
+            
         },
         {
             "title": "Al Bari Group of Companies",
             "imageUrl": "/apps/albari.png",
-            "project_url": "https://github.com/Benrobo/e-workflow-client",
+            "project_url": "https://play.google.com/store/apps/details?id=com.bizventure.androiddeveloper.aquatic_mall&hl=en&gl=US",
             "description": "Automate document submission within a school.",
-            "tags": [ "react native", "xcode", "android studio","firebase message" ]
+            "tags": [ "react native", "xcode", "android studio","firebase message" ],
+            "thumbnail":"/apps/albari-thumb.webp"
+
         },
         {
             "title": "Cool People Network",
             "imageUrl": "/apps/cool.png",
-            "project_url": "https://github.com/Benrobo/quickr",
+            "project_url": "https://play.google.com/store/apps/details?id=com.Mobochanic",
             "description": "Cool People Network is a Streaming platform that provides quality entertainment. Our network is a true one stop shop that has a wide range of content.",
-            "tags": [  "react native", "javascript", "webview", "mysql", "php" ]
+            "tags": [  "react native", "javascript", "webview", "mysql", "php" ],
+            "thumbnail":"/apps/people.webp"
+
         }
+     
     ]
 }

@@ -21,7 +21,7 @@ function Layout({ children }) {
     <div className={`w-screen h-screen `}  >
       <DomHead />
       <Header>
-        <NavBar />
+        {/* <NavBar /> */}
       </Header>
       {children}
       {windowWidth <= 700 && <ResponsiveNavbar />}

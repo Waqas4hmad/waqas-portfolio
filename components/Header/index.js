@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react"
 import { Container } from ".."
 import userAvatar from "../../public/images/avatar/avatar.png"
+import { TypeAnimation } from 'react-type-animation';
 
 import usersInfo from "../../data/usersInfo.json"
 import languages from "../../data/languages.json"
@@ -70,19 +71,35 @@ export default function Header({ children }) {
                             <span data-aos="fade-up" className={`py-[2px]  font-bold text-white text-[15px] text-capitalize  `}>
                                 HELLO, <span className="text-green-700 ">MY NAME IS </span>
                             </span>
-
                             <br />
                             <span data-aos="fade-up"
                                 style={{
                                     textShadow: " 2px 2px #000, -2px 2px #000, 2px -2px #000, -2px -2px #000, 5px 5px 0px rgb(0 0 0 / 20%)"
                                 }}
-                                className={`font-[Jost] tracking-wide py-[2px]  font-bold text-green-700 text-[80px] text-capitalize whitespace-nowrap  `}>
+                                className={`font-[Jost] tracking-wide py-[2px]  font-bold text-green-700 text-[34px] md:text-[80px]  text-capitalize whitespace-nowrap  `}>
                                 WAQAS <span className="font-[Jost] text-white-200">AHMAD</span>
                             </span>
                             <br />
-                            <span data-aos="fade-up" className={`py-[2px] text-white font-bold tracking-wider text-[15px] text-capitalize  `}>
+                            <TypeAnimation
+                                sequence={['I', 1000, 'I AM', 1000, 1500]}
+                                //  Continuing previous Text
+                                className={`py-[2px] text-white font-bold tracking-wider text-[15px] text-capitalize  `}
+                                wrapper="span"
+                                cursor={false}
+
+                            />
+                            <TypeAnimation
+                                sequence={[3000, 'Mobile Application Developer', 4000, 'Full Stack Developer', 4000,]}
+                                speed={270}
+                                cursor={false}
+
+                                className={`font-[Caveat] text-[30px] px-2 `}
+                                wrapper="span"
+                                repeat={Infinity}
+                            />
+                            {/* <span data-aos="fade-up" className={`py-[2px] text-white font-bold tracking-wider text-[15px] text-capitalize  `}>
                                 I AM <span className=" font-[Caveat] text-[30px] px-2  ">  Mobile Application Developer </span>
-                            </span>
+                            </span> */}
 
                             <br />
                             <br />
@@ -92,21 +109,22 @@ export default function Header({ children }) {
                             <br />
                         </div>
                         <div className={` top-[0px] flex align-start items-start justify-start w-full py-5`}>
-                     <a className="btn hover:bg-green-700 hover:text-white-300" onClick={openResume}> DOWNLOAD CV</a>
+                            <a className="btn hover:bg-green-700 hover:text-white-300" onClick={openResume}> DOWNLOAD CV</a>
+                            <hr className="h-px my-7 bg-gray-200 border-0 dark:bg-gray-700 w-[45px] " />
+                            <a href="#skills-section" className="h-[56px] leading-[56px] px-3 text-xl1"> My Skills </a>
                         </div>
 
                         {resumeActive && <ResumeViewer openResume={openResume} />}
                     </div>
                     <div data-aos="fade-left" className={`main w-full h-full hidden md:flx  relative`}>
                         <div data-aos="fade-up" className={`img-cont p-[15vmin]   ss  `}>
-                           
-                            <img src={"/images/pic4.png"} className={`sliderimage`} />
+
+                            <img src={"/images/pic.png"} className={`sliderimage`} />
                             <div className="circle circle-1"></div>
                             <img src={"/images/pat-2.png"} className={`circle img1`} />
                             <img src={"/images/pat-2.png"} className={`circle img2`} />
                             <img src={"/images/pat-2.png"} className={`circle img3`} />
                             <div className="info-list">
-
                                 <ul>
                                     <li>
                                         <span class='num'>
@@ -118,7 +136,7 @@ export default function Header({ children }) {
                                     </li>
                                     <li>
                                         <span class='num'>
-                                           25 <strong>+</strong>
+                                            25 <strong>+</strong>
                                         </span>
                                         <span class='value'>
                                             Completed<strong className="text-green-700"> Project</strong>
@@ -127,15 +145,7 @@ export default function Header({ children }) {
                                 </ul>
                             </div>
                         </div>
-                        {/* <div data-aos="fade-up" className={`circleA`}>
-                            <img src={languages.languages.length === 0 && languages.languages.length > 2 ? "/images/svg/react_native.svg" : languages.languages[0]} className={`langImgA`} />
-                        </div>
-                        <div data-aos="fade-right" className={`circleB`}>
-                            <img src={languages.languages.length === 0 && languages.languages.length > 2 ? "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" : languages.languages[1]} className={`langImgB`} />
-                        </div>
-                        <div data-aos="fade-left" className={`circleC`}>
-                            <img src={languages.languages.length === 0 && languages.languages.length > 2 ? "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" : languages.languages[2]} className={`langImgC`} />
-                        </div> */}
+                       
                     </div>
                 </div>
             </Container>

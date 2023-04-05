@@ -1,6 +1,8 @@
-import { Layout, Intro, Container, Projects, Contact, Footer, Quote, DomHead } from "../components";
+import { Layout, Intro, Container, Projects, Contact, Footer,Skills, Quote, DomHead,Academic  } from "../components";
 import { useEffect } from "react";
 import Aos from "aos"
+import 'swiper/css';
+
 import { DataContextProvider } from "../context/DataContext";
 
 export default function HomePage() {
@@ -19,6 +21,9 @@ export default function HomePage() {
                     <Intro />
                     <Projects />
                 </Container>
+                <Skills />
+                <Academic/>
+
                 </div>
 
                 <Quote />

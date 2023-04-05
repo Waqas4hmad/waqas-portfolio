@@ -7,6 +7,8 @@ export { default as Container } from "./Container"
 export { default as DomHead } from "./Head"
 export { default as Intro } from "./Intro"
 export { default as Projects } from "./Projects"
+export { default as Skills } from "./Skills"
+export { default as Academic } from "./Academic"
 export { default as Quote } from "./Quotes"
 export { default as Contact } from "./Contact"
 

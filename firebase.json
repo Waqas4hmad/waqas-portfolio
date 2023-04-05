@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "waqasportfolio",
+    "public": "y",
     "ignore": [
       "firebase.json",
       "**/.*",
