@@ -63,21 +63,17 @@ function Projects() {
                 <span data-aos="zoom-in" className={`w-[100px] h-[2px] rounded-[30px] m-[20px] bg-green-200 md:w-[120px]`}></span>
                 <p data-aos="fade-up" className={`text-white-200 text-[15px]`}>Latest Works</p>
                 <span data-aos="zoom-in" className={`w-[100px] h-[2px] rounded-[30px] m-[20px] bg-green-200 md:w-[120px]`}></span>
-
-
-                <Link href="/projects">
-                    <a data-aos="zoom-in-up" className={`text-center text-green-200 underline absolute top-[50px] text-[14px]`}>Feature Projects</a>
-                </Link>
             </div>
+            <p data-aos="fade-up" className={`text-white-200 text-[15px]`}>I Develop Applications That Help People</p>
 
-            <div className={`projects w-full  px-4 flex flex-row flex-wrap items-center justify-between mb-[50px]  `}>
+            <div className={`projects w-full  px-4 flex flex-row flex-wrap items-center justify-center md: justify-between mb-[50px]  `}>
              
                     {
                         projects.length > 0 ?
                             projects.slice(0, 6).map((list, i) => {
                                 return (
                                         <Link href={list?.project_url}>
-                                            <div data-aos="zoom-in" key={i} className={`bg-phone w-auto bg-dark-200 rounded-[50px] relative top-[50px] transition-all mb-[50px] sm-[100px] mr-[5px] opacity-[.7] md:w-[250px] hover:opacity-[1]`} >
+                                            <div data-aos="zoom-in" key={i} className={`bg-phone w-[250px] bg-dark-200 rounded-[50px] relative top-[50px] transition-all mb-[50px] sm-[100px] mr-[5px] opacity-[.7] hover:opacity-[1]`} >
                                                 <style jsx>{`
                                 .bg-phone{
                                    height:500px;

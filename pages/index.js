@@ -1,4 +1,4 @@
-import { Layout, Intro, Container, Projects, Contact, Footer,Skills, Quote, DomHead } from "../components";
+import { Layout, Intro, Container, Projects, Contact, Footer,Skills, Quote, DomHead,Academic  } from "../components";
 import { useEffect } from "react";
 import Aos from "aos"
 import 'swiper/css';
@@ -22,6 +22,8 @@ export default function HomePage() {
                     <Projects />
                 </Container>
                 <Skills />
+                <Academic/>
+
                 </div>
 
                 <Quote />

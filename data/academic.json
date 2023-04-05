@@ -1,0 +1,15 @@
+{
+    "academic": [
+       
+        {
+            "name": "MASTER OF COMPUTER SCIENCE",
+            "desc": "Master's Degree",
+            "institude":"VIRTUAL INERNATION UNIVERSITY"
+        },
+        {
+            "name": "BECHLOR OF COMPUTER SCIENCE",
+            "desc": "Bechlor Degree (BS.CS)",
+            "institude":"IQRA UNIVERSITY, KARACHI"
+        } 
+    ]
+}

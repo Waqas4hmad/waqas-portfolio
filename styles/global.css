@@ -495,3 +495,95 @@ body{
     -webkit-border-radius: 56px;
 }
 
+.accordion {
+    max-width: 600px;
+    margin: 2rem auto;
+  }
+  
+  .accordion-title {
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    
+  }
+  
+  .accordion-title:hover {
+    background-color: #3ab4cc;
+  }
+  
+  .accordion-title,
+  .accordion-content {
+    padding: 1rem;
+  }
+  
+  /* .accordion-content {
+  } */
+
+
+  .acc_head {
+    width: 100%;
+    float: left;
+    clear: both;
+    overflow: hidden;
+    min-height: 50px;
+    display: flex;
+    padding: 0px 0px 15px 0px;
+    position: relative;
+    align-items: center;
+    cursor: pointer;
+  }
+
+ 
+  .closed .vertical {
+    transition: all 0.5s ease-in-out;
+    transform: rotate(-90deg);
+  }
+  .closed .horizontal {
+    transition: all 0.5s ease-in-out;
+    transform: rotate(-90deg);
+    opacity: 1;
+  }
+  .opened {
+    opacity: 1;
+  }
+  .opened .vertical {
+    transition: all 0.5s ease-in-out;
+    transform: rotate(90deg);
+  }
+  .opened .horizontal {
+    transition: all 0.5s ease-in-out;
+    transform: rotate(90deg);
+    opacity: 0;
+}
+  .circle-plus {
+      width: 4em;
+      font-size: 1em;
+      opacity: .7;
+  }
+  
+  .circle-plus .circle {
+      position: relative;
+      
+  }
+  .circle-plus .circle .horizontal {
+      position: absolute;
+      background-color: var(--dark1);
+      width: 30px;
+      height: 5px;
+      left: 50%;
+      margin-left: -15px;
+      top: 50%;
+      margin-top: -2.5px;
+  }
+  .circle-plus .circle .vertical {
+      position: absolute;
+      background-color:  var(--dark1);
+      width: 5px;
+      height: 30px;
+      left: 50%;
+      margin-left: -2.5px;
+      top: 50%;
+      margin-top: -15px;
+  }
+  
+  

@@ -71,13 +71,12 @@ export default function Header({ children }) {
                             <span data-aos="fade-up" className={`py-[2px]  font-bold text-white text-[15px] text-capitalize  `}>
                                 HELLO, <span className="text-green-700 ">MY NAME IS </span>
                             </span>
-
                             <br />
                             <span data-aos="fade-up"
                                 style={{
                                     textShadow: " 2px 2px #000, -2px 2px #000, 2px -2px #000, -2px -2px #000, 5px 5px 0px rgb(0 0 0 / 20%)"
                                 }}
-                                className={`font-[Jost] tracking-wide py-[2px]  font-bold text-green-700 text-[80px] text-capitalize whitespace-nowrap  `}>
+                                className={`font-[Jost] tracking-wide py-[2px]  font-bold text-green-700 text-[34px] md:text-[80px]  text-capitalize whitespace-nowrap  `}>
                                 WAQAS <span className="font-[Jost] text-white-200">AHMAD</span>
                             </span>
                             <br />
