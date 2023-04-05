@@ -1,3 +1,4 @@
+
 Hi 👋,I'm Waqas Ahmad.
 
 Senior Software Engineer
@@ -11,4 +12,6 @@ Mission-driven full stack developer with a passion for thoughtful UI design, col
 * 🧠  I'm learning Software Design Patterns ,DevOps
 * 🤝  I'm open to collaborating on Full Fledge Project / Full Stack Application / Startup / Backend.
 * ⚡  Ask me about Mobile Application(Android, IOS, IPAD ), Typescript, Nodejs.
+
+=======
 
