@@ -61,10 +61,10 @@ function Projects() {
         <div className={`projectCont w-full h-auto relative top-[50px] p-10px flex flex-col items-center justify-center mb-[50px]`}>
             <div className={`w-full flex flex-row items-center justify-center`}>
                 <span data-aos="zoom-in" className={`w-[100px] h-[2px] rounded-[30px] m-[20px] bg-green-200 md:w-[120px]`}></span>
-                <p data-aos="fade-up" className={`text-white-200 text-[15px]`}>Latest Works</p>
+                <p data-aos="fade-up" className={`text-white-200 text-[24px]`}>Portfolio</p>
                 <span data-aos="zoom-in" className={`w-[100px] h-[2px] rounded-[30px] m-[20px] bg-green-200 md:w-[120px]`}></span>
             </div>
-            <p data-aos="fade-up" className={`text-white-200 text-[15px]`}>I Develop Applications That Help People</p>
+            <p data-aos="fade-up" className={`text-white-200 text-[15px]`}>I Love What I Do</p>
 
             <div className={`projects w-full  px-4 flex flex-row flex-wrap items-center justify-center md: justify-between mb-[50px]  `}>
              

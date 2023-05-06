@@ -59,7 +59,7 @@ export default function Header({ children }) {
 
 
     return (
-        <header className={` header w-full h-[850px]  md:h-auto pt-[40px]`}>
+        <header className={` header w-full h-[850px]  md:h-auto pt-[10px]`}>
             <Container>
                 {children}
 

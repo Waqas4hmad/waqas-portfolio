@@ -11,5 +11,7 @@ export { default as Skills } from "./Skills"
 export { default as Academic } from "./Academic"
 export { default as Quote } from "./Quotes"
 export { default as Contact } from "./Contact"
+export { default as Experience } from "./Experience"
+
 
 
